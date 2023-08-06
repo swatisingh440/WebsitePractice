@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+
+    <link rel="stylesheet" href="style.css" class="style">
+
+</head>
+<body >
+    <nav class=" navbar heightNav-resp h-nav-resp">
+        <ul class="nav-list v-cls-resp">
+            <div class="logo"><img src="lapPic.webp" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+        <div class="right-nav v-cls-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background first-section " id="home" >
+        <div class="box-main">
+            <div class="first-half">
+                <p class="text-big">
+                    The future of todays generation
+                </p>
+                <p class="text-small">
+                    When it comes to building our global future, there is no bigger asset than today's youth – this is the generation that will solve future crises, lead countries, write policies, innovate and preserve or destroy democracies and systems of justice. Already today, they are far more engaged than their older age groups.
+ 
+                </p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch now</button>
+                </div>
+            </div>
+            <div class="second-half">
+                <img src="img.webp" alt="tiger-image">
+            </div>
+        </div>
+    </section>
+    <section class="secRight" id="about">
+        <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo voluptatum, quos non natus explicabo eum possimus doloremque laborum quibusdam ullam, soluta quod cupiditate adipisci vitae iste suscipit dolores ea.
+        </p></div>
+        <div class="thumbnail">
+            <img src="img.webp" alt="" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="secLeft" id="">
+        <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo voluptatum, quos non natus explicabo eum possimus doloremque laborum quibusdam ullam, soluta quod cupiditate adipisci vitae iste suscipit dolores ea.
+        </p></div>
+        <div class="thumbnail">
+            <img src="img.webp" alt="" class="imgFluid">
+        </div>
+    </section><hr>
+    <section class="contact" id="contact">
+         <h2 class="text-center" >Contact Us</h2>
+         <div class="form">
+            <input class="form-input"type="text" id="text" name="name" placeholder="Enter your name">
+            <input class="form-input" type="phone" id="phone" name="number" placeholder="Enter your number">
+            <input class="form-input"type="email" id="email" name="email" placeholder="Enter your email">
+            
+            <textarea class="form-input"name="text" id="text" cols="30" rows="10" placeholder="enter your feedback"></textarea>
+            <button class="btn btn-dark">submit</button>
+
+         </div>
+    </section>
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; 2027-All rights reserved
+        </p>
+    </footer>
+    <script>
+        let burger=document.querySelector('.burger')
+        let navbar=document.querySelector('.navbar')
+        let rightNav=document.querySelector('.right-nav')
+        let navList=document.querySelector('.nav-list')
+        console.log(burger,navList,navbar,rightNav)
+        burger.addEventListener('click',()=>{
+           rightNav.classList.toggle('v-cls-resp');
+         navList.classList.toggle('v-cls-resp');
+       navbar.classList.toggle('h-nav-resp');
+         
+        })
+        
+    </script>
+</body>
+</html>
